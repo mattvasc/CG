@@ -1,8 +1,8 @@
 # Computação Gráfica
 
 ### Membros da Equipe
-Giovanna Blasco Martin
+Giovanna Blasco Martin (620378)
 
-Mateus Silva Vasconcelos
+Mateus Silva Vasconcelos (620580)
 
-Matheus da Silva Jesus
+Matheus da Silva Jesus (620025)
