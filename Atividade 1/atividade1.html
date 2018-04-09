@@ -9,14 +9,23 @@
 		</style>
 	</head>
 	<body>
-		<script src="../three.min.js"></script>
+		<script src="../three.js/three.js"></script>
+    <script src="../three.js/OBJLoader.js"></script>
 		<script>
+      //cria cena
       var scene = new THREE.Scene();
-      var camera = new THREE.PerspectiveCamera(75, (window.innerWidth / window.innerHeight), 0.1, 1000);
-
+      //cria camera com (FOV, aspect radio, near, far)
+      var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+      // renderer é o que faz o objeto aparecer na tela
       var renderer = new THREE.WebGLRenderer();
+      // aqui é definido que o renderer tem tamanho da janela do browser
       renderer.setSize(window.innerWidth, window.innerHeight);
+      // elemento <canvas>
       document.body.appendChild( renderer.domElement );
+
+      // inicializa o "carregador" de .obj
+      var loader = new THREE.OBJLoader();
+
 		</script>
 	</body>
 </html>
